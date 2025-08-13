@@ -1,12 +1,8 @@
 #### Prerequisites
-- OpenGL driver
-    ```bash
-    sudo pacman -Sy mesa
-    ```
-- C++ compiler
-    ```bash
-    sudo pacman -Sy g++
-    ```
+- OpenGL driver (Mesa for linux)
+- C++ compiler (g++, Clang or MSVC)
+> [!WARNING]
+> I have no experience working with MSVC so you might have to change the compile options
 
 #### Template
 ```bash
