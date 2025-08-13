@@ -7,3 +7,8 @@
     ```bash
     sudo pacman -Sy g++
     ```
+
+#### Template
+```bash
+git clone -b template --single-branch https://github.com/ridwanalmahmud/openglbasics.git
+```

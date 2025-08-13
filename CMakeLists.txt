@@ -22,15 +22,19 @@ add_executable(${PROJECT_NAME}
     src/main.cpp
 )
 
+add_library(glad STATIC ${glad_SOURCE_DIR}/src/glad.c)
+target_include_directories(glad PUBLIC ${glad_SOURCE_DIR}/include)
+target_compile_options(glad PRIVATE -w)
+
 target_include_directories(${PROJECT_NAME} PRIVATE 
     ${PROJECT_SOURCE_DIR}/include
-    ${PROJECT_NAME}/src
+    ${PROJECT_SOURCE_DIR}/src
 )
 
 find_package(OpenGL REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE
+    glad
     glfw
     glm::glm
-    glad
     OpenGL::GL
 )
