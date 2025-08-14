@@ -4,7 +4,7 @@
 > [!WARNING]
 > I have no experience working with MSVC so you might have to change the compile options
 
-#### Template
+#### CMake OpenGL Template (glfw, glad, glm)
 ```bash
 git clone -b template --single-branch https://github.com/ridwanalmahmud/openglbasics.git
 ```

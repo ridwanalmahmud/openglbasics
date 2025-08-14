@@ -30,6 +30,7 @@ endif()
 
 add_executable(${PROJECT_NAME} 
     src/main.cpp
+    src/triangle.cpp
 )
 
 add_library(glad STATIC ${glad_SOURCE_DIR}/src/glad.c)
